@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
-  opacity: 0.7;
+  background: rgba(200, 200, 200, 0.3);
 }
 
 .navigationBar > li {
@@ -12,29 +11,55 @@
 }
 
 .navigationBar > .navButton {
-  opacity: 1;
-  background-color: black;
+  background: rgba(50, 50, 50, 0.3);
+  margin: 0px 4px;
 }
 
 .navigationBar > li > a {
   display: block;
-  color: white;
   text-align: center;
-  padding: 16px 16px;
+  padding: 19px 16px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 24px;
+  color: white;
 }
 
-/* Change the link color to #111 (black) on hover */
-.navigationBar > li > a:hover {
-  background-color: #111;
+.navigationBar > .navButton:hover {
+  background: rgba(30, 30, 30, 0.7);
 }
 
 .navigationBar > li > h1 {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 50px 14px 16px;
+  padding: 10px 50px 10px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.barSeperator{
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.navigationBar > .credButton {
+  background: rgba(60, 100, 245, 0.7);
+  margin: 4px;
+  float: right;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.navigationBar > .credButton:hover {
+  background: rgba(0, 70, 255,  0.7);
+}
+
+body{
+  font-family: Lato;
+}
+
+.button{
+  font-family: Lato;
 }
