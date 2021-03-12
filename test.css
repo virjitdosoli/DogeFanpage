@@ -1,0 +1,35 @@
+body {
+  background-color: blue;
+
+}
+
+.navigationBar{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    background-color: #333;
+    opacity: 80%;
+
+  }
+  
+  .navigationBar > li {
+    float: left;
+  }
+  
+  .navigationBar > li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .navigationBar > li > a:hover {
+    background-color: #111;
+    opacity:100%;
+  }
+  
