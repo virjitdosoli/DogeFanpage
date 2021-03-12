@@ -1,0 +1,6 @@
+Bitcoin<,,>
+[paragraph intro]<,,>
+[about block chain]<,,>
+Satoshi Nakamoto<,,>
+9 January 2009<,,>
+15 January 2021<,,>
