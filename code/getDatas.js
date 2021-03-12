@@ -1,9 +1,13 @@
 var data = {
   "btc":{
     "name": "Bitcoin",
+    "software": "Bitcoin Core",
     "devs": "Satoshi Nakamoto",
     "release1": "9 January 2009",
     "release2": "15 January 2021",
+    "language": "C++",
+    "OS": "Windows, MacOS,<br>Linux",
+    "architecture": "x86, Risc-V, ARM",
     "paragraphs":[
       {
         "title": "Bitcoin",
@@ -27,9 +31,13 @@ function getParameterByName(name, url = window.location.href) {
 var cur = getParameterByName("cur");
 if(cur != null){
   window.addEventListener('load', function () {
-    document.getElementsByClassName("rightCol")[0].innerHTML = data[cur].devs;
-    document.getElementsByClassName("rightCol")[1].innerHTML = data[cur].release1;
-    document.getElementsByClassName("rightCol")[2].innerHTML = data[cur].release2;
+    document.getElementsByClassName("rightCol")[0].innerHTML = data[cur].software;
+    document.getElementsByClassName("rightCol")[1].innerHTML = data[cur].devs;
+    document.getElementsByClassName("rightCol")[2].innerHTML = data[cur].release1;
+    document.getElementsByClassName("rightCol")[3].innerHTML = data[cur].release2;
+    document.getElementsByClassName("rightCol")[4].innerHTML = data[cur].OS;
+    document.getElementsByClassName("rightCol")[5].innerHTML = data[cur].language;
+    document.getElementsByClassName("rightCol")[6].innerHTML = data[cur].architecture;
     var bodyHTML = "";
     for (var i = 0; i < data[cur].paragraphs.length; i++) {
       if(i == 0){
@@ -43,5 +51,6 @@ if(cur != null){
 
     document.getElementById("cryptoName").innerHTML = data[cur].name;
     document.getElementsByTagName("title").innerHTML = data[cur].name + " - THE CRYPTOs";
+    document.getElementsByTagName("body")[0].style.backgroundImage = "url(\"images/" + cur + ".png\")"
   })
 }
