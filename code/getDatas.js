@@ -111,6 +111,6 @@ window.addEventListener('load', function () {
   document.getElementsByClassName("mainBody")[0].innerHTML = bodyHTML;
 
   document.getElementById("cryptoName").innerHTML = data[cur].name;
-  document.getElementsByTagName("title").innerHTML = data[cur].name + " - THE CRYPTOs";
+  document.getElementsByTagName("title")[0].innerHTML = data[cur].name + " - THE CRYPTOs";
   document.getElementsByTagName("body")[0].style.backgroundImage = "url(\"images/" + cur + ".png\")"
 })
