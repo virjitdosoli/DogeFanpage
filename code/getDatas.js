@@ -22,7 +22,7 @@ var data = {
   "eth": {
     "name": "Ether",
     "software": "Ethereum",
-    "devs": "	Vitalik Buterin, Gavin Wood",
+    "devs": "	Vitalik Buterin,<br>Gavin Wood",
     "release1": "30 July 2015",
     "release2": "1 January 2020",
     "language": "Go, Rust, C#,<br>C++, Java, Python",

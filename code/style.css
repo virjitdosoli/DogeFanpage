@@ -15,7 +15,16 @@
   margin: 0px 4px;
 }
 
-.navigationBar > li > a {
+.navigationBar > .navButton > a {
+  display: block;
+  text-align: center;
+  padding: 19px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+.navigationBar > .credButton > a {
   display: block;
   text-align: center;
   padding: 19px 16px;
@@ -28,14 +37,10 @@
   background: rgba(30, 30, 30, 0.7);
 }
 
-.navigationBar > li > h1 {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px 50px 10px 16px;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: bold;
+.navigationBar > li > a > img {
+  margin: 0px;
+  margin-right: 15px;
+  height: 55px;
 }
 
 .barSeperator{
