@@ -128,3 +128,12 @@ h2 {
   border-width: thick;
   border-color: grey;
 }
+
+footer {
+  text-align: center;
+  background-color: rgba(30, 30, 70, 0.8);
+  color: rgb(255, 255, 200);;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

@@ -17,7 +17,8 @@ var data = {
         "title": "The Bitcoin Blockchain",
         "text": "An info"
       }
-    ]
+    ],
+    "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
   },
   "eth": {
     "name": "Ether",
@@ -37,7 +38,8 @@ var data = {
         "title": "The Bitcoin Blockchain",
         "text": "An info"
       }
-    ]
+    ],
+    "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
   },
   "xrp": {
     "name": "XRP (Ripple)",
@@ -57,7 +59,8 @@ var data = {
         "title": "The Bitcoin Blockchain",
         "text": "An info"
       }
-    ]
+    ],
+    "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
   },
   "doge": {
     "name": "Dogecoin",
@@ -77,7 +80,8 @@ var data = {
         "title": "The Bitcoin Blockchain",
         "text": "An info"
       }
-    ]
+    ],
+    "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
   }
 }
 function getParameterByName(name, url = window.location.href) {
@@ -112,5 +116,6 @@ window.addEventListener('load', function () {
 
   document.getElementById("cryptoName").innerHTML = data[cur].name;
   document.getElementsByTagName("title")[0].innerHTML = data[cur].name + " - THE CRYPTOs";
-  document.getElementsByTagName("body")[0].style.backgroundImage = "url(\"images/" + cur + ".png\")"
+  document.getElementsByTagName("body")[0].style.backgroundImage = "url(\"images/" + cur + ".png\")";
+  document.getElementById("footer").innerHTML = data[cur].footerContent;
 })
