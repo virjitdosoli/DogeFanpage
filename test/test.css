@@ -13,11 +13,11 @@ body {
     opacity: 80%;
 
   }
-  
+
   .navigationBar > li {
     float: left;
   }
-  
+
   .navigationBar > li > a {
     display: block;
     color: white;
@@ -26,10 +26,9 @@ body {
     text-decoration: none;
 
   }
-  
+
   /* Change the link color to #111 (black) on hover */
   .navigationBar > li > a:hover {
     background-color: #111;
     opacity:100%;
   }
-  
