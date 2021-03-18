@@ -11,10 +11,14 @@ var data = {
     "paragraphs": [
       {
         "title": "Bitcoin",
-        "text": "An intro"
+        "text": "Bitcoin was the first cryptocurrency, which was developed by an unknown person or group called Satoshi Nakamoto. Many people have claimed to be Satoshi with limited proof of these claims, while many others have stated that they are not Satoshi when people said that they are. Bitcoin’s creation was based on information researched in the white paper written by Satoshi Nakamato, which is still available on <a href=\"https://bitcoin.org\">bitcoin.org</a> as a <a href=\"https://bitcoin.org/bitcoin.pdf\">pdf</a>. This pdf outlines the concept of a secure decentralised peer to peer currency system. This is achieved through a ledger system, which is described further in the Bitcoin Blockchain section of this page."
       },
       {
         "title": "The Bitcoin Blockchain",
+        "text": "The Bitocin Blockchain is a distributed ledger of all past transactions. The blockchain consists of blocks of up to 1 megabyte in size. The transactions of these blocks contain a public key of the sender, the public key of the recipient, the amount of bitcoin being sent, a donation to the miner, and a digital signature fom the sender. Most components of a bitcoin transaction rely on the ECDSA (Elliptic curve digital signature algorithm), which uses a private key to create a public key. This private key can be used to generate a string from an input, which through another function with the input of the public key, the signature, and the content getting signed can be used to verify the validity of the signature. These public keys essentially act as account numbers.<br>An important part of the bitcoin blockchain is mining, mining is the proccess of verifying blocks. "
+      },
+      {
+        "title": "History of Bitcoin",
         "text": "An info"
       }
     ],
@@ -23,7 +27,7 @@ var data = {
   "eth": {
     "name": "Ether",
     "software": "Ethereum",
-    "devs": "	Vitalik Buterin,<br>Gavin Wood",
+    "devs": "Vitalik Buterin,<br>Gavin Wood",
     "release1": "30 July 2015",
     "release2": "1 January 2020",
     "language": "Go, Rust, C#,<br>C++, Java, Python",
