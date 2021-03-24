@@ -11,11 +11,11 @@ var data = {
     "paragraphs": [
       {
         "title": "Bitcoin",
-        "text": "Bitcoin was the first cryptocurrency, which was developed by an unknown person or group called Satoshi Nakamoto. Many people have claimed to be Satoshi with limited proof of these claims, while many others have stated that they are not Satoshi when people said that they are. Bitcoin’s creation was based on information researched in the white paper written by Satoshi Nakamato, which is still available on <a href=\"https://bitcoin.org\">bitcoin.org</a> as a <a href=\"https://bitcoin.org/bitcoin.pdf\">pdf</a>. This pdf outlines the concept of a secure decentralised peer to peer currency system. This is achieved through a ledger system, which is described further in the Bitcoin Blockchain section of this page."
+        "text": "Bitcoin was the first cryptocurrency, which was developed by an unknown person or group called Satoshi Nakamoto. Many people have claimed to be Satoshi with limited proof of these claims, while many others have stated that they are not Satoshi when people said that they are. Bitcoin's creation was based on information researched in the white paper written by Satoshi Nakamato, which is still available on <a href=\"https://bitcoin.org\">bitcoin.org</a> as a <a href=\"https://bitcoin.org/bitcoin.pdf\">pdf</a>. This pdf outlines the concept of a secure decentralised peer to peer currency system. This is achieved through a ledger system, which is described further in the Bitcoin Blockchain section of this page."
       },
       {
         "title": "The Bitcoin Blockchain",
-        "text": "The Bitocin Blockchain is a distributed ledger of all past transactions. The blockchain consists of blocks of up to 1 megabyte in size. The transactions of these blocks contain a public key of the sender, the public key of the recipient, the amount of bitcoin being sent, a donation to the miner, and a digital signature fom the sender. Most components of a bitcoin transaction rely on the ECDSA (Elliptic curve digital signature algorithm), which uses a private key to create a public key. This private key can be used to generate a string from an input, which through another function with the input of the public key, the signature, and the content getting signed can be used to verify the validity of the signature. These public keys essentially act as account numbers.<br>An important part of the bitcoin blockchain is mining, mining is the proccess of verifying blocks. "
+        "text": "The Bitocin Blockchain is a distributed ledger of all past transactions. The blockchain consists of blocks of up to 1 megabyte in size. The transactions of these blocks contain a public key of the sender, the public key of the recipient, the amount of bitcoin being sent, a donation to the miner, and a digital signature fom the sender. Most components of a bitcoin transaction rely on the ECDSA (Elliptic curve digital signature algorithm), which uses a private key to create a public key. This private key can be used to generate a string from an input, which through another function with the input of the public key, the signature, and the content getting signed can be used to verify the validity of the signature. These public keys essentially act as account numbers. Another important algorithm in the bitcoin protocol is the hashing algorithm which irreversibly turns an input into an output.<br>An important part of the bitcoin blockchain is mining, which is the proccess of verifying blocks. This is done in multiple steps. First, the computer doing the mining selects transactions to include in the block, usually considering the value of the donation. Next, another value is added to the block, this value is determined through the repeated hashing of the block (including this value), when the hash is less than a particular value (given as a difficulty, as the smaller this number is the longer it takes to find a correct value), the final block can be submitted to the blockchain."
       },
       {
         "title": "History of Bitcoin",
@@ -35,11 +35,11 @@ var data = {
     "architecture": "x86-64, ARM",
     "paragraphs": [
       {
-        "title": "Bitcoin",
+        "title": "Ethereum",
         "text": "An intro"
       },
       {
-        "title": "The Bitcoin Blockchain",
+        "title": "The Ethereum Blockchain",
         "text": "An info"
       }
     ],
@@ -56,11 +56,11 @@ var data = {
     "architecture": "x86",
     "paragraphs": [
       {
-        "title": "Bitcoin",
+        "title": "Ripple",
         "text": "An intro"
       },
       {
-        "title": "The Bitcoin Blockchain",
+        "title": "XRP vs Ripple",
         "text": "An info"
       }
     ],
@@ -77,11 +77,11 @@ var data = {
     "architecture": "x86, ARM",
     "paragraphs": [
       {
-        "title": "Bitcoin",
+        "title": "Dogecoin",
         "text": "An intro"
       },
       {
-        "title": "The Bitcoin Blockchain",
+        "title": "Late 2020",
         "text": "An info"
       }
     ],
