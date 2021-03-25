@@ -19,7 +19,18 @@ var data = {
       },
       {
         "title": "History of Bitcoin",
-        "text": "An info"
+        "text":
+        `<ul>
+          <li>
+            The domain name \"bitcoin.org\" was registered on 18 August 2008.
+          </li>
+          <li>
+            The bitcoin white paper was released on 31 October 2008.
+          </li>
+          <li>
+            Bitcon core was released on 9 January 2009.
+          </li>
+        </ul>`
       }
     ],
     "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
