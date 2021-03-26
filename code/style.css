@@ -140,12 +140,25 @@ h2 {
 footer {
   text-align: center;
   background-color: rgba(30, 30, 70, 0.8);
-  color: rgb(255, 255, 200);;
+  color: rgb(255, 255, 200);
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 
 .tabel {
-  
+  border-collapse: collapse;
+  width: 100%;
+  color: rgb(250, 250, 210);
+}
+
+
+.tabel th, .tabel td {
+  border: 1px solid #F7F3E4;
+  text-align: left;
+  padding: 8px;
+}
+
+.tabel tr:nth-child(even), .tabel th{
+  background-color: #202020;
 }
