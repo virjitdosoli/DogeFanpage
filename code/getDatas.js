@@ -54,7 +54,7 @@ var data = {
       },
       {
         "title": "The Ethereum Blockchain",
-        "text": "The Ethereum blockchain when a computer attempts to complete a complicated puzzle, when this puzzle is solved, "
+        "text": "The Ethereum blockchain is when a computer attempts to complete a complicated puzzle, when this puzzle is solved, "
       }
     ],
     "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
