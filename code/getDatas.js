@@ -50,11 +50,11 @@ var data = {
     "paragraphs": [
       {
         "title": "Ethereum",
-        "text": "An intro"
+        "text": "Ethereum is a decentralized open source blockchain which uses Ether as its native currency."
       },
       {
         "title": "The Ethereum Blockchain",
-        "text": "An info"
+        "text": "The Ethereum blockchain when a computer attempts to complete a complicated puzzle, when this puzzle is solved, "
       }
     ],
     "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
