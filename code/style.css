@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;1,300&display=swap');
 
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+ul{
+  padding-left: 20px;
+}
+
+h2{
+  padding-top: 15px;
+}
+
 .navigationBar{
   list-style-type: none;
   margin: 0;
@@ -42,7 +55,7 @@
 .navigationBar > li > a > img {
   margin: 0px;
   margin-right: 15px;
-  height: 55px;
+  height: 66px;
 }
 
 .barSeperator{
