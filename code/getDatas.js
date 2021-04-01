@@ -54,7 +54,7 @@ var data = {
       },
       {
         "title": "The Ethereum Blockchain",
-        "text": "The Ethereum blockchain is when a computer attempts to complete a complicated puzzle, when this puzzle is solved, "
+        "text": "The Ethereum blockchain consists of information about transactions collected in groups, which are known as blocks. Once one block is filled, it is connected to the previous block, which is called a chain."
       }
     ],
     "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
