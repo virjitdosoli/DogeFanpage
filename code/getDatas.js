@@ -1,3 +1,5 @@
+/*Author: Martin*/
+
 var data = {
   "btc": {
     "name": "Bitcoin",
