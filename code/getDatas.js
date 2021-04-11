@@ -10,6 +10,7 @@ var data = {
     "language": "C++",
     "OS": "Windows, MacOS,<br>Linux",
     "architecture": "x86, Risc-V, ARM",
+    "blockTime": "10 minutes",
     "paragraphs": [
       {
         "title": "Bitcoin",
@@ -33,12 +34,12 @@ var data = {
             Bitcon core was released on 9 January 2009.
           </li>
           <li>
-            The first commercial transaction of bicoin wa in 2010 when programmer Laszlo Hanyecz bought two pizzas for 10 000 BTC, now worth over $340 million each.
+            The first commercial transaction of bicoin was in 2010 when programmer Laszlo Hanyecz bought two pizzas for 10 000 BTC, these pizzas are now worth over $340 million each.
           </li>
         </ul>`
       }
     ],
-    "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
+    "footerContent": "<a href=\"https://bitcoin.org/en/download\">bitcoin core download</a> - <a href=\"https://www.coinbase.com/price/bitcoin\">Bitcoin price</a>"
   },
   "eth": {
     "name": "Ether",
@@ -49,17 +50,43 @@ var data = {
     "language": "Go, Rust, C#,<br>C++, Java, Python",
     "OS": "Cross-Platform",
     "architecture": "x86-64, ARM",
+    "blockTime": "13-14 seconds",
     "paragraphs": [
       {
         "title": "Ethereum",
-        "text": "Ethereum is a decentralized open source blockchain which uses Ether as its native currency."
+        "text": "Ethereum is a decentralized open source blockchain, distributed through ethereum.org. The Ethereum Blockchain uses Ether as its native currency but supports many other currencies."
       },
       {
         "title": "The Ethereum Blockchain",
-        "text": "The Ethereum blockchain consists of information about transactions collected in groups, which are known as blocks. Once one block is filled, it is connected to the previous block, which is called a chain."
+        "text": "The Ethereum blockchain works very simular to the <a href=\"?cur=btc\">bitcoin</a> blockchain, except for some specific things including the block time and block size. The block time of a block chain determines the average amout of time it takes for a hash to be generated for a block. The block size is simply the maximum amount of data that can be stored in a block. Since the block times of the ethereum blockchain are much smaller, and the block size is much larger than that of bitcoin, it can be used to transfer much more data, much faster, therefore requiring smaller fees to the miner. This meant the ethereum block chain has been used for than just the transfer of ether, it has been used for videogames, transfer of other cryptocurrencies, and even used to publish ATAR results."
+      },
+      {
+        "title": "Ethereum 2",
+        "text": `Although it isn't available yet, <a href=\"https://ethereum.org/en/\">ethereum.org</a> claims eth2 has many improvements over Ethereum 1. This includes:
+        <ul>
+          <li>Better scalability: Through faster block times</li>
+          <li>Better security: Through protocol changes, and usage of different, better algorithms</li>
+          <li>Better sustainability: Through protocol changes, which rather than using a proof of work system (as described in the <a href=\"?cur=btc\">bitcoin blockchain section</a>), using a proof of stake system</li>
+        </ul>`
+      },
+      {
+        "title": "Proof of Stake Blockchain",
+        "text": `A proof of stake blockchain uses all coin holders stake (value and age of an account) to determine who should verify the next block. This uses substantially less computing power than a proof of work system. There are multiple benifits and drawbacks of using a proof of stake system.<br>
+        <h3>Advantages of proof of work include:</h3>
+        <ul>
+          <li>Harder to fake blocks</li>
+          <li>Harder to agree with multiple chains simultaneously</li>
+          <li>More secure currently</li>
+        </ul>
+        <h3>Advantages of proof of stake include:</h3>
+        <ul>
+          <li>Uses substantially less computing power</li>
+          <li>Prioritises more trustworthy (richer) accounts</li>
+          <li>Theorised to be more secure if developed correctly</li>
+        </ul>`
       }
     ],
-    "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
+    "footerContent": "<a href=\"https://ethereum.org/en/\">ethereum.org</a> - <a href=\"https://www.coinbase.com/price/ethereum\">Ether price</a>"
   },
   "xrp": {
     "name": "XRP (Ripple)",
@@ -70,10 +97,15 @@ var data = {
     "language": "C++",
     "OS": "Windows, MacOS,<br>Linux",
     "architecture": "x86",
+    "blockTime": "N/A",
     "paragraphs": [
       {
         "title": "Ripple",
         "text": "An intro"
+      },
+      {
+        "title": "The Ripple Ledger",
+        "text": "An info"
       },
       {
         "title": "XRP vs Ripple",
@@ -91,6 +123,7 @@ var data = {
     "language": "C++, Python, C",
     "OS": "Windows, Linux, MacOS,<br>IOS, Android",
     "architecture": "x86, ARM",
+    "blockTime": "1 minute",
     "paragraphs": [
       {
         "title": "Dogecoin",
@@ -123,6 +156,7 @@ window.addEventListener('load', function () {
   document.getElementsByClassName("rightCol")[4].innerHTML = data[cur].OS;
   document.getElementsByClassName("rightCol")[5].innerHTML = data[cur].language;
   document.getElementsByClassName("rightCol")[6].innerHTML = data[cur].architecture;
+  document.getElementsByClassName("rightCol")[7].innerHTML = data[cur].blockTime;
   var bodyHTML = "";
   for (var i = 0; i < data[cur].paragraphs.length; i++) {
     if(i == 0){

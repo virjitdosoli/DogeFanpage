@@ -46,7 +46,7 @@ h2{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: rgba(25, 42, 89, 0.4);
+  background: rgba(25, 42, 89, 0.7);
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -189,11 +189,18 @@ h2{
   border-color: rgb(20, 20, 20);
 }
 
-.mainBody > p > a{
+.mainBody a {
   color: rgb(200, 240, 255);
   text-decoration: underline;
 }
 
+.mainBody a:visited {
+  color: rgb(87, 61, 217);
+}
+
+.mainBody h3 {
+  padding-top: 8px;
+}
 /*h2 {
   font-size: 20px;
 }
@@ -214,8 +221,12 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+  padding-bottom: 8px;
 }
 
+footer > p > a {
+  color: rgb(87, 61, 217);
+}
 /*************************************************************************************************************************************/
 
 .tabel {
