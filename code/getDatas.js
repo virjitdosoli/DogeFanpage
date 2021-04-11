@@ -31,7 +31,7 @@ var data = {
             Bitcon core was released on 9 January 2009.
           </li>
           <li>
-            The first commercial transaction of bicoin wa in 2010 when programmer Laszlo Hanyecz bought two pizzas for 10 000 BTC, now worth over $340 million each. 
+            The first commercial transaction of bicoin wa in 2010 when programmer Laszlo Hanyecz bought two pizzas for 10 000 BTC, now worth over $340 million each.
           </li>
         </ul>`
       }
@@ -136,4 +136,21 @@ window.addEventListener('load', function () {
   document.getElementsByTagName("title")[0].innerHTML = data[cur].name + " - THE CRYPTOs";
   document.getElementsByTagName("body")[0].style.backgroundImage = "url(\"images/" + cur + ".png\")";
   document.getElementById("footer").innerHTML = data[cur].footerContent;
+  var bodyRect = document.body.getBoundingClientRect(),
+    elemRect = document.getElementsByTagName("footer")[0].getBoundingClientRect(),
+    offset   = elemRect.top - bodyRect.top;
+
+  var h = window.innerHeight;
+  if(offset < h){
+    document.getElementsByTagName("footer")[0].style.position = "absolute";
+  }else{
+    document.getElementsByTagName("footer")[0].style.position = "relative";
+  }
+  /*var links = document.getElementsByTagName("link");
+  for (var cl in links)
+  {
+    var link = links[cl];
+    if (link.rel === "stylesheet")
+      link.href += "";
+  }*/
 })
