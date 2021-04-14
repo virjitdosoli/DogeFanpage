@@ -101,7 +101,7 @@ var data = {
     "paragraphs": [
       {
         "title": "Ripple",
-        "text": "An intro"
+        "text": "Ripple, like <a href=\"?cur=eth\">Ethereum</a> is a peice of software designed to acheive much more than what bitcoin saught to. <a href=\"ripple.com\">ripple.com</a> states that RippleNet (the protocol developed by ripple) has the ability to send payments in 3 seconds, and send messages with a 0% failure rate"
       },
       {
         "title": "The Ripple Ledger",
