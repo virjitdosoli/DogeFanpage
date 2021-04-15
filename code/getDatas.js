@@ -39,7 +39,7 @@ var data = {
         </ul>`
       }
     ],
-    "footerContent": "<a href=\"https://bitcoin.org/en/download\">bitcoin core download</a> - <a href=\"https://www.coinbase.com/price/bitcoin\">Bitcoin price</a>"
+    "footerContent": "<a href=\"https://bitcoin.org/en/download\">Bitcoin Core Download</a> - <a href=\"https://www.coinbase.com/price/bitcoin\">Bitcoin price</a>"
   },
   "eth": {
     "name": "Ether",
@@ -101,7 +101,7 @@ var data = {
     "paragraphs": [
       {
         "title": "Ripple",
-        "text": "Ripple, like <a href=\"?cur=eth\">Ethereum</a> is a peice of software designed to acheive much more than what bitcoin saught to. <a href=\"ripple.com\">ripple.com</a> states that RippleNet (the protocol developed by ripple) has the ability to send payments in 3 seconds, and send messages with a 0% failure rate"
+        "text": "Ripple, like <a href=\"?cur=eth\">Ethereum</a> is a peice of software designed to acheive much more than what bitcoin saught to. <a href=\"https://ripple.com/\">ripple.com</a> states that RippleNet (the protocol developed by ripple) has the ability to send payments in 3 seconds, and send messages with a 0% failure rate"
       },
       {
         "title": "The Ripple Ledger",
@@ -112,7 +112,7 @@ var data = {
         "text": "An info"
       }
     ],
-    "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
+    "footerContent": "<a href=\"https://ripple.com/\">ripple.com</a> - <a href=\"https://www.coinbase.com/price/xrp\">XRP Price</a>"
   },
   "doge": {
     "name": "Dogecoin",
@@ -134,7 +134,7 @@ var data = {
         "text": "An info"
       }
     ],
-    "footerContent": "<a href=\"downloadpeg\">bitcoin core download</a>"
+    "footerContent": "<a href=\https://www.coinbase.com/price/dogecoin\">Dogecoin</a>"
   }
 }
 function getParameterByName(name, url = window.location.href) {
