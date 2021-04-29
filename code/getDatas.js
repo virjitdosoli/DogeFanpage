@@ -190,3 +190,23 @@ window.addEventListener('load', function () {
       link.href += "";
   }*/
 })
+
+window.onresize = function(){
+  document.getElementsByTagName("footer")[0].style.position = "absolute";
+
+  var bodyRect = document.getElementsByClassName("mainBody")[0].getBoundingClientRect(),
+    elemRect = document.getElementsByTagName("footer")[0].getBoundingClientRect(),
+    offset   = elemRect.top - bodyRect.bottom;
+
+  console.log("resized, offset = " + offset);
+
+  if(offset > 0){
+    document.getElementsByTagName("footer")[0].style.position = "absolute";
+  }else{
+    document.getElementsByTagName("footer")[0].style.position = "relative";
+  }
+
+  var footer = document.getElementsByTagName("footer")[0];
+  if (footer.rel === "stylesheet")
+    footer.href += "";
+}
