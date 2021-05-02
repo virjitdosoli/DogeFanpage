@@ -127,7 +127,7 @@ var data = {
     "paragraphs": [
       {
         "title": "Dogecoin",
-        "text": "An intro"
+        "text": "Dogecoin is an open source currency which allows you to send and recieve dogecoins.<br> Its purpose is for the user to be able to send a recieve money from anywhere, anonymously,<br> and without any middleman or extra fees. "
       },
       {
         "title": "Late 2020",
