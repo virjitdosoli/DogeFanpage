@@ -127,11 +127,11 @@ var data = {
     "paragraphs": [
       {
         "title": "Dogecoin",
-        "text": "Dogecoin is an open source currency which allows you to send and recieve dogecoins. Its purpose is for the user to be able to send a recieve money from anywhere, anonymously, and without any middleman or extra fees. Dogecoin is considered an alt coin and sometimes referred to as a meme. Dogecoin has sponsored the Jamacian bobsled team, with its users raising over $25000 in doge to fund their winter olympics campaign. It features a Shiba Inu for its logo and is considered an internet meme. In late 2020, the meme fueled reddit stock trading rally saw dogecoin as topic of great discussion. This lead to many people buying doge, with celebrities hopping onto the show. Celebrities such as Elon Musk and Mark Cuban were creating hype about Dogecoin."
+        "text": "Dogecoin is an open source currency which allows you to send and recieve dogecoins. Its purpose is for the user to be able to send a recieve money from anywhere, anonymously, and without any middleman or extra fees. Dogecoin is considered an alt coin and sometimes referred to as a meme. Dogecoin has sponsored the Jamacian bobsled team, with its users raising over $25000 in doge to fund their winter olympics campaign. It features a Shiba Inu for its logo and is considered an internet meme. In late 2020, the meme fueled reddit stock trading rally saw dogecoin as topic of great discussion. This lead to many people buying doge, with celebrities hopping onto the show. Celebrities such as Elon Musk and Mark Cuban were creating hype about Dogecoin. This movement gained traction and Dogecoin's market cap at the time of writing is at 84.4 billion. "
       },
       {
         "title": "Mining Doge",
-        "text": "An info"
+        "text": "Dogecoin differs from the proof-of-work protocol used by bitcoin in many ways. The altcoin has a block time of one minute, and there is no limit to the amount of dogecoin which can be mined. Doge can be mined by a single person, or you can pool. Doge mining is supported on Windows, Mac or Linux.  "
       }
     ],
     "footerContent": "<a href=\https://www.coinbase.com/price/dogecoin\">Dogecoin</a>"
