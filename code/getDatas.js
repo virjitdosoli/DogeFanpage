@@ -127,10 +127,10 @@ var data = {
     "paragraphs": [
       {
         "title": "Dogecoin",
-        "text": "Dogecoin is an open source currency which allows you to send and recieve dogecoins.<br> Its purpose is for the user to be able to send a recieve money from anywhere, anonymously,<br> and without any middleman or extra fees. "
+        "text": "Dogecoin is an open source currency which allows you to send and recieve dogecoins. Its purpose is for the user to be able to send a recieve money from anywhere, anonymously, and without any middleman or extra fees. Dogecoin is considered an alt coin and sometimes referred to as a meme. Dogecoin has sponsored the Jamacian bobsled team, with its users raising over $25000 in doge to fund their winter olympics campaign. It features a Shiba Inu for its logo and is considered an internet meme. In late 2020, the meme fueled reddit stock trading rally saw dogecoin as topic of great discussion. This lead to many people buying doge, with celebrities hopping onto the show. Celebrities such as Elon Musk and Mark Cuban were creating hype about Dogecoin."
       },
       {
-        "title": "Late 2020",
+        "title": "Mining Doge",
         "text": "An info"
       }
     ],
