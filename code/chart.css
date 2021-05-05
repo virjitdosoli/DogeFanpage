@@ -1,0 +1,44 @@
+@keyframes flashNoticeBox {
+  0% {background-color: rgba(12, 26, 64, 1);}
+  50% {background-color: rgba(10, 62, 201, 1);}
+  100% {background-color: rgba(12, 26, 64, 1);}
+}
+
+canvas {
+  padding-top: 15px;
+  margin-top: 15px;
+  background-color: rgba(12, 26, 64, 0.5);
+  border-radius: 6px;
+}
+
+.dataPoint {
+  background-color: rgba(12, 26, 64, 1);
+  margin: 2px;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dataPoint.button {
+  cursor: pointer;
+}
+
+.dataPoint.button.small{
+  background-color: rgba(0, 20, 50, 1);
+}
+
+.dataPoint.notices {
+  max-width: 180px;
+  width: 180px;
+  text-align: left;
+  max-height: 220px;
+  overflow: hidden;
+}
+
+.dataPoint.red{background-color: rgb(80, 50, 50);}
+.dataPoint.green{background-color: rgb(50, 80, 50);}
+.dataPoint.blue{background-color: rgb(50, 50, 80);}
+
+.dataPoint.button.red{background-color: rgb(120, 20, 20);}
+.dataPoint.button.green{background-color: rgb(20, 120, 20);}
+.dataPoint.button.blue{background-color: rgb(20, 20, 120);}
