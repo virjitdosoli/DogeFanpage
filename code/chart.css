@@ -1,0 +1,18 @@
+canvas {
+  padding-top: 15px;
+  margin-top: 15px;
+  background-color: rgba(12, 26, 64, 0.5);
+  border-radius: 6px;
+}
+
+.dataPoint {
+  background-color: rgba(12, 26, 64, 1);
+  margin: 2px;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dataPoint.button {
+  cursor: pointer;
+}

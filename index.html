@@ -1,9 +1,11 @@
 <html>
   <head>
       <meta name="author" content="Jashan">
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+      <script src="https://cdn.rawgit.com/jwagner/simplex-noise.js/87440528bcf8ec89840e974d8f76cfe3da548c37/simplex-noise.min.js"></script>
       <link rel="icon" type="image/png" href="images/icon.png"></link>
       <link rel = "stylesheet" href = "code/style.css">
+      <link rel = "stylesheet" href = "code/chart.css">
       <!--<script src="https://kit.fontawesome.com/23c08df4ca.js" crossorigin="anonymous"></script>-->
       <title>Homepage - THE CRYPTOs</title>
   </head>
@@ -20,11 +22,27 @@
     <div style="width: 100%; height: 80px"></div>
 
     <!--Card -->
-    <div class="mainBody" style="max-width: 80%">
+    <div class="mainBody" style="max-width: 80%;">
       <h1>What is a Cryptocurrency?</h1>
       <p>A cryptocurrency is a decentralised digital currency, based on blockchain technology. There are about 5000 cryptocurrencies.</p>
       <br>
       <p>A cryptocurrency blockchain is an open distributed ledger that records various transactions in code. Transactions are recoreded in blocks, which are linked through a chain. Mining is when new units of cryptocurrency are released into the world, generally in exchange of validating transactions. The more the network grown, the more power is required to mine the crypto</p>
+    </div>
+
+    <div class="mainBody" style="max-width: 80%; width: 80%">
+      <h1>Crypto Trading Game: <span id="info"></span></h1>
+      <canvas id="myChart" style="width:100%; max-height: 54vh"></canvas>
+      <script src="code/game.js"></script>
+      <div class="dataPoint"><p>This is a game which simulatates purchasing cryptocurrencies and other stocks, using randomised noise to generate the stock value. Dont forget you can short sell the cryptocurrencies allowing you to own a negative number of RickCoin.</p></div>
+      <div style="display: inline-grid; grid-template-columns: auto auto auto">
+        <div class="dataPoint"><b>Money in Bank:</b> <span id="bank"></span></div>
+        <div class="dataPoint"><b>Money Total:</b> <span id="tot"></span></div>
+        <div class="dataPoint"><b>Money in RickCoin:</b> <span id="dolrikc"></span></div>
+        <div class="dataPoint"><b>RickCoin Value:</b> <span id="rikcv"></span></div>
+        <div class="dataPoint"><b>Owned RickCoin:</b> <span id="rikc"></span></div>
+        <div class="dataPoint button" onclick="buy()"><b>Buy RickCoin</b></div>
+        <div class="dataPoint button" onclick="sell()"><b>Sell RickCoin</b></div>
+      </div>
     </div>
   </body>
 </html>
