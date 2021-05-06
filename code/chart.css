@@ -1,9 +1,16 @@
 @keyframes flashNoticeBox {
   0% {background-color: rgba(12, 26, 64, 1);}
-  50% {background-color: rgba(10, 62, 201, 1);}
+  25% {background-color: rgba(10, 62, 201, 1);}
+  50% {background-color: rgba(255, 255, 255, 1);}
+  75% {background-color: rgba(10, 62, 201, 1);}
   100% {background-color: rgba(12, 26, 64, 1);}
 }
 
+@keyframes flashInfo {
+  0% {color: rgb(250, 250, 210);}
+  50% {color: rgb(250, 0, 0);}
+  100% {color: rgb(250, 250, 210);}
+}
 canvas {
   padding-top: 15px;
   margin-top: 15px;

@@ -33,7 +33,7 @@
       <h1>Crypto Trading Game: <span id="info"></span></h1>
       <canvas id="myChart" style="width:100%; max-height: 42vh"></canvas>
       <script src="code/game.js"></script>
-      <div class="dataPoint"><p>This is a game which simulatates purchasing cryptocurrencies and other stocks, using randomised noise to generate the stock value. Dont forget you can short sell the cryptocurrencies allowing you to own a negative number of RickCoin, FrogGold, or FishShare.</p></div>
+      <div class="dataPoint"><p>This is a game which simulatates purchasing cryptocurrencies and other stocks, using randomised noise to generate the stock value. Dont forget you can short sell the cryptocurrencies allowing you to own a negative number of RickCoin, FrogGold, or FishShare. Warning; if you short sell a crypto and the value increases too much the bank will automatically buy back this amount of currency</p></div>
       <div style="display: flex; flex-wrap: wrap">
         <div>
           <div class="dataPoint"><b>Money in Bank:</b> <span id="bank"></span></div>
@@ -41,16 +41,13 @@
           <div class="dataPoint">
             <b>Exchange quantity: </b>
             <div style="display: flex;">
-              <div class="dataPoint button small" onclick="changeQuant(true)">+</div>
-              <div class="dataPoint" id="quant">1</div>
               <div class="dataPoint button small" onclick="changeQuant(false)">-</div>
+              <div class="dataPoint" id="quant">1</div>
+              <div class="dataPoint button small" onclick="changeQuant(true)">+</div>
             </div>
           </div>
-        </div>
-
-        <div class="dataPoint notices">
-          <b>Notices:</b><br>
-          <span id="notices"></span>
+          <div class="dataPoint notices" id="funds">Insufficient Funds</div>
+          <div class="dataPoint notices" id="autBuy">Automatic Buy</div>
         </div>
 
         <div>

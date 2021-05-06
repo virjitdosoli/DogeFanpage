@@ -12,6 +12,8 @@ var fish = 0;
 
 var quant = 1;
 
+var offset = 1.05;
+
 for (var a = 59; a >= 0; a--) {
   xValues.push(a);
   rikcValues.push(0);
@@ -113,44 +115,69 @@ var updateData = window.setInterval(function(){
   chart.update();
   updateText()
 
+  if(bank + rickVal*rikc + frog*frogVal + fish*fishVal < 20){
+    console.log("broke");
+    var sold = false;
+    if(rickVal*rikc < 0){
+      buy('rikc', true);
+      sold = true;
+    }
+
+    if(frog*frogVal < 0){
+      buy('frog', true);
+      sold = true;
+    }
+
+    if(fish*fishVal < 0){
+      buy('fish', true);
+      sold = true;
+    }
+    if(sold == true){
+      flashNoticeBox("autBuy");
+    }else{
+      document.getElementById("info").innerText = " (You are very broke, and have lost)";
+      document.getElementById("info").style.animation = "flashInfo 1200ms infinite"
+    }
+  }
 }, 1000);
 
 function sell(coin){
+  console.log("selling");
   if(coin == 'rick'){
     rikc -= quant;
-    bank += rickVal*quant;
+    bank += rickVal*quant/offset;
   }
 
   if(coin == 'frog'){
     frog -= quant;
-    bank += frogVal*quant;
+    bank += frogVal*quant/offset;
   }
 
   if(coin == 'fish'){
     fish -= quant;
-    bank += fishVal*quant;
+    bank += fishVal*quant/offset;
   }
   updateText()
 }
 
-function buy(coin){
-  if(bank > rickVal*quant && coin == 'rick'){
+function buy(coin, force=false){
+  if((bank > rickVal*quant || force) && coin == 'rick'){
     rikc += quant;
-    bank -= rickVal*quant;
+    bank -= rickVal*quant*offset;
   }else
 
-  if(bank > fishVal*quant && coin == 'fish'){
+  if((bank > fishVal*quant || force) && coin == 'fish'){
     fish += quant;
-    bank -= fishVal*quant;
+    bank -= fishVal*quant*offset;
   }else
 
-  if(bank > frogVal*quant && coin == 'frog'){
+  if((bank > frogVal*quant || force) && coin == 'frog'){
     frog += quant;
-    bank -= frogVal*quant;
+    bank -= frogVal*quant*offset;
   }
   else{
     notices.unshift("Insufficient funds");
-    flashNoticeBox();
+    flashNoticeBox("funds");
   }
   updateText();
 }
@@ -170,24 +197,12 @@ function updateText(){
   document.getElementById("dolfish").innerText = (fishVal*fish).toFixed(2);
   document.getElementById("fish").innerText = fish;
   document.getElementById("fishV").innerText = fishVal.toFixed(2);
-
-  var noticeSTR = "";
-
-  for (var i = 0; i < notices.length; i++) {
-    if(i == notices.length - 1){
-      noticeSTR += "<p>" + notices[i] + "</p>";
-    }else{
-      noticeSTR += "<p>" + notices[i] + "</p><br>";
-    }
-  }
-  document.getElementById("notices").innerHTML = noticeSTR;
 }
 
-function flashNoticeBox() {
-  console.log("ran animation lol")
-  document.getElementsByClassName("notices")[0].style.animation = "flashNoticeBox 300ms";
+function flashNoticeBox(id) {
+  document.getElementById(id).style.animation = "flashNoticeBox 800ms";
   setTimeout(function() {
-    document.getElementsByClassName("notices")[0].style.animation = "";
+    document.getElementById(id).style.animation = "";
   }, 500);
 }
 
