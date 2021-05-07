@@ -101,7 +101,7 @@ var data = {
     "paragraphs": [
       {
         "title": "Ripple",
-        "text": "Ripple, like <a href=\"?cur=eth\">Ethereum</a> is a peice of software designed to acheive much more than what bitcoin saught to. <a href=\"https://ripple.com/\">ripple.com</a> states that RippleNet (the protocol developed by ripple) has the ability to send payments in 3 seconds, and send messages with a 0% failure rate"
+        "text": "Ripple, like <a href=\"?cur=eth\">Ethereum</a> is a peice of software designed to acheive much more than what bitcoin saught to. <a href=\"https://ripple.com/\">ripple.com</a> states that RippleNet (the protocol developed by ripple) has the ability to send payments in 3 seconds, and send messages with a 0% failure rate. It has connections to hundreds of financial institutions around the world. A company named Santander has processed 450 million worth of transactions. It takes around 22 seconds to transfer money into Thailand using the ripplenet network. Ripple is secured by a network of validating servers run by a private company. There are around 100 Ripple coins in existance, with 45 billion in circulation. It may be less secure than bitcoin, processes transactions quicker. Ripple uses a Ledger Consensus Protocol, where validators, not miners, maintain the transaction ledger and keep a record of the transaction. There have been lawsuits in the US against XRP, and Coinbase has suspended all XRP trading partners."
       },
       {
         "title": "The Ripple Ledger",
