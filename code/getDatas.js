@@ -105,11 +105,18 @@ var data = {
       },
       {
         "title": "The Ripple Ledger",
-        "text": "An info"
+        "text": "The XRP Ledger acording to <a href=\"https://xrpl.org\">XRPL.org</a> is simmular to other blockchain technologies, and intended to settle payments in 3-5 seconds. Like many other blockchains its decentralised and opensource."
       },
       {
-        "title": "XRP vs Ripple",
-        "text": "An info"
+        "title": "XRPL uses",
+        "text": `<a href=\"https://xrpl.org\">XRPL.org</a> describes multiple uses in personal and bussiness applications of Ripple, this includes;
+        <ul>
+          <li>Cross border transactions: sending money into, and out of various countries without anything but an internet connection
+          </li><li>Microtransactions: sending money to a company to pay for add free websites, games, or in game items
+          </li><li>Wallets: to store passwords and cryptocurrency in a phone
+          </li><li>Exchangs: to make cross border payments easier, by exchanging to and from XRP 
+          </li>
+        </ul>`
       }
     ],
     "footerContent": "<a href=\"https://ripple.com/\">ripple.com</a> - <a href=\"https://www.coinbase.com/price/xrp\">XRP Price</a>"
